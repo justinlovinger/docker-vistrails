@@ -1,0 +1,43 @@
+<startup version="1.0.4">
+  <configuration>
+  </configuration>
+  <packages>
+    <package name="pythonCalc" />
+    <package name="URL" />
+    <package name="controlflow" />
+    <package name="tabledata" />
+    <package name="basic_modules" />
+    <package name="abstraction" />
+  </packages>
+  <disabledpackages>
+    <package name="sklearn" />
+    <package name="spreadsheet">
+      <configuration>
+        <key name="columnCount">
+          <int value="3" />
+        </key>
+        <key name="fixedCellSize">
+          <bool value="False" />
+        </key>
+        <key name="dumpfileType">
+          <str value="PNG" />
+        </key>
+        <key name="rowCount">
+          <int value="2" />
+        </key>
+      </configuration>
+    </package>
+    <package name="gmaps" />
+    <package name="vtk" />
+    <package name="dialogs" />
+    <package name="tej" />
+    <package name="matplotlib" />
+    <package name="CLTools">
+      <configuration />
+    </package>
+    <package name="sql" />
+    <package name="persistent_archive">
+      <configuration />
+    </package>    
+  </disabledpackages>
+</startup>
