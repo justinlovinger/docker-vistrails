@@ -23,4 +23,4 @@ COPY startup.xml /root/.vistrails/startup.xml
 # The docker image will need our vistrails file and a python script to run it
 COPY who_tuberculosis.vt /usr/src/
 COPY run_workflow.py /usr/src/
-CMD python /usr/src/run_workflow.py /usr/src/who_tuberculosis.vt alias country=Nigeria
+ENTRYPOINT ["python", "/usr/src/run_workflow.py", "/usr/src/who_tuberculosis.vt", "alias"]
