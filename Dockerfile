@@ -17,4 +17,10 @@ RUN \
 RUN \
   pip install git+https://github.com/vistrails/vistrails.git@v2.2
 
-ADD startup.xml /root/.vistrails/startup.xml
+COPY startup.xml /root/.vistrails/startup.xml
+
+# Run our vistrails file
+# The docker image will need our vistrails file and a python script to run it
+COPY who_tuberculosis.vt /usr/src/
+COPY run_workflow.py /usr/src/
+CMD python /usr/src/run_workflow.py /usr/src/who_tuberculosis.vt nigeria-avg
